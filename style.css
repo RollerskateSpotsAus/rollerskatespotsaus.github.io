@@ -2,7 +2,7 @@
 
 /* Add a black background color to the top navigation */
 .nav {
-    background-color: darkolivegreen;
+    background-color: honeydew;
     overflow: hidden;
   }
   
@@ -10,7 +10,7 @@
 .nav a {
     float: left;
     display: block;
-    color: honeydew;
+    color: darkgreen;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -19,7 +19,7 @@
   
   /* Change the color of links on hover */
   .nav a:hover {
-    background-color: #ddd;
+    background-color: lightgreen;
     color: black;
   }
   
