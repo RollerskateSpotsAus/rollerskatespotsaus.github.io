@@ -1,7 +1,15 @@
 /* Homepage */
-body{
-  padding-left: 2%;
-  padding-right: 2%;
+
+
+footer{
+  height: 5%;
+  background-color: forestgreen;
+}
+
+footer p{
+  padding: 1%;
+  text-align: center;
+  color: white;
 }
 
 #welcome{
