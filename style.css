@@ -4,6 +4,10 @@ body{
   padding-right: 2%;
 }
 
+#welcome{
+  background-color: honeydew;
+}
+
 /* Add a black background color to the top navigation */
 .nav {
     background-color: honeydew;
