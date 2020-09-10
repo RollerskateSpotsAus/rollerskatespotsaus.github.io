@@ -13,7 +13,11 @@ body{
     background-color: honeydew;
     overflow: hidden;
   }
-  
+
+.states{
+  float: right;
+}
+
  /* Style the links inside the navigation bar */
 .nav a {
     float: left;
