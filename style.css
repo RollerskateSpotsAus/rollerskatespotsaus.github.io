@@ -1,4 +1,8 @@
 /* Homepage */
+body{
+  padding-left: 2%;
+  padding-right: 2%;
+}
 
 /* Add a black background color to the top navigation */
 .nav {
@@ -52,7 +56,7 @@ div.gallery img {
 }
 
 div.desc {
-  padding: 15px;
+  padding: 2%;
   text-align: center;
 }
 
@@ -61,7 +65,9 @@ div.desc {
 }
 
 .spot {
-  padding: 0 6px;
+  padding-right: 2%;
+  padding-bottom: 1%;
+  padding-top: 1%;
   float: left;
   width: 24.99999%;
 }
