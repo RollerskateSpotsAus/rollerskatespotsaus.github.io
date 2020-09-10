@@ -11,6 +11,11 @@ footer p{
   color: white;
 }
 
+footer a{
+  text-decoration: none;
+  color: honeydew;
+}
+
 #welcome{
   background-color: honeydew;
 }
