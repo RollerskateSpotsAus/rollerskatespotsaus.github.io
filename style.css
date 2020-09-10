@@ -68,6 +68,16 @@ div.desc {
   text-align: center;
 }
 
+div.name{
+  padding: 2%;
+  font-size: 20px;
+}
+
+div.address div.city{
+  padding: 2%;
+  font-size: 15px;
+}
+
 * {
   box-sizing: border-box;
 }
