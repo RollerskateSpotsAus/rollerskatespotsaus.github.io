@@ -2,7 +2,7 @@
 
 footer{
   height: 5%;
-  background-color: forestgreen;
+  background-color: #19381f;
 }
 
 footer p{
@@ -17,12 +17,13 @@ footer a{
 }
 
 #welcome{
-  background-color: honeydew;
+  background-color: #78AE78;
+  color: black;
 }
 
 /* Add a black background color to the top navigation */
 .nav {
-    background-color: honeydew;
+    background-color: #214625;
     overflow: hidden;
   }
 
@@ -51,7 +52,7 @@ footer a{
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: honeydew;
+  background-color: #2C5B2D;
   min-width: 80px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -81,7 +82,7 @@ footer a{
 .nav a {
     float: left;
     display: block;
-    color: darkgreen;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -90,13 +91,13 @@ footer a{
   
   /* Change the color of links on hover */
   .nav a:hover {
-    background-color: lightgreen;
-    color: black;
+    background-color: #366F34;
+    color: white;
   }
   
   /* Add an active class to highlight the current page */
   .nav a.active {
-    background-color: forestgreen;
+    background-color: #53A548;
     color: white;
   }
   
