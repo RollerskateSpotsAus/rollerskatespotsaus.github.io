@@ -230,3 +230,7 @@ div.address div.city{
 #verification{
   height: 30px;
 }
+
+#spotVerify{
+  font-size: 15px;
+}
