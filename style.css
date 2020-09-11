@@ -189,14 +189,19 @@ div.address div.city{
 /************** singular skate spot **************/
 #spotFeatures{
   background-color: seashell;
+  border-radius: 25px;
+  border: 2px solid  #53A548;
+  padding-left: 26px;
 }
 
 .spotDetails{
   font-family: 'Open Sans', sans-serif;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .spotDetails img{
-  max-width: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
+  max-height: 10%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
