@@ -17,9 +17,16 @@ footer a{
 }
 
 #welcome{
-  background-color: #78AE78;
+  border-bottom: 1px solid  #214625;
   color: black;
   font-family: 'Montserrat', sans-serif;
+}
+
+#page{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
 }
 
 #page{
