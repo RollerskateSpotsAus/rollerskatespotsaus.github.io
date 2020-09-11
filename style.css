@@ -19,12 +19,18 @@ footer a{
 #welcome{
   background-color: #78AE78;
   color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#page{
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* Add a black background color to the top navigation */
 .nav {
     background-color: #214625;
     overflow: hidden;
+    font-family: 'Overpass', sans-serif;
   }
 
 .states{
@@ -173,4 +179,8 @@ div.address div.city{
 /************** singular skate spot **************/
 #spotFeatures{
   background-color: seashell;
+}
+
+.spotDetails{
+  font-family: 'Open Sans', sans-serif;
 }
