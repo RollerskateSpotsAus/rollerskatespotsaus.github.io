@@ -205,11 +205,12 @@ div.address div.city{
 }
 
 .spotDetails{
-  background-color: whitesmoke;
+  background-color: white;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 2.5px;
   padding-bottom: 2.5px;
+  border: 2px solid rgb(243, 243, 243);
 }
 
 #spotFeatures{
@@ -217,6 +218,7 @@ div.address div.city{
   border-radius: 25px;
   border: 2px solid  #53A548;
   padding-left: 26px;
+  max-width: 350px;
 }
 
 #spotTitle{
@@ -233,4 +235,14 @@ div.address div.city{
 
 #spotVerify{
   font-size: 15px;
+}
+
+#spotVerify a{
+  text-decoration: none;
+  color: #214625;
+}
+
+#structureLink a{
+  text-decoration: none;
+  color:  #19381F;
 }
