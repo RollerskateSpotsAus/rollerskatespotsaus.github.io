@@ -26,6 +26,16 @@ footer a{
   font-family: 'Open Sans', sans-serif;
 }
 
+.logo{
+  background-color: #214625;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 26px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  padding-left: 26px;
+}
+
 /* Add a black background color to the top navigation */
 .nav {
     background-color: #214625;
@@ -183,4 +193,10 @@ div.address div.city{
 
 .spotDetails{
   font-family: 'Open Sans', sans-serif;
+}
+
+.spotDetails img{
+  max-width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
