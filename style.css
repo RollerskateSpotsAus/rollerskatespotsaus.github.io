@@ -44,8 +44,10 @@ footer a{
   width: 25%;
 }
 
-
-
+#aboutPage a{
+  text-decoration: none;
+  color: #2C5B2D;
+}
 
 /********************** Navigation **********************/
 .logo{
