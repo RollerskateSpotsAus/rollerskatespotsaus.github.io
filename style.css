@@ -147,16 +147,40 @@ footer a{
 
 /********************** Selection Page **********************/
 
-#selection{
-  width: 30%;
-  background-color: grey;
-  padding: 1%;
+#skateSelection{
+  width:200px; 
+  height:200px;
   text-align: center;
+  background-image: url('statePages/NoImage.png');
+  background-position: center center;
+  background-size: 100% 100%;
 }
 
-#selectPage{
-  display: flex;
-  width: 100%;
+#parkSelection{
+  width:200px; 
+  height:200px;
+  text-align: center;
+  background-image: url('statePages/NoImage.png');
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+#rinkSelection{
+  width:200px; 
+  height:200px;
+  text-align: center;
+  background-image: url('statePages/NoImage.png');
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+#storeSelection{
+  width:200px; 
+  height:200px;
+  text-align: center;
+  background-image: url('statePages/NoImage.png');
+  background-position: center center;
+  background-size: 100% 100%;
 }
 
 #selectPage img{
