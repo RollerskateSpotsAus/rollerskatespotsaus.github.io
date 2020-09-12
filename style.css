@@ -150,6 +150,8 @@ footer a{
 .pageSidebar{
   float: right;
   width: 150px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #214625;
 }
 
 .pageSidebar a{
@@ -157,11 +159,17 @@ footer a{
   color: #19381F;
 }
 
+.pageSidebar a:hover{
+  text-decoration: none;
+  color: #366F34;
+}
+
 #skateSelection{
   margin: 20px;
   width: 250px; 
   height: 250px;
   text-align: center;
+  padding-top: 100px;
   background-image: url('statePages/NoImage.png');
   background-position: center center;
   background-size: 100% 100%;
@@ -172,6 +180,7 @@ footer a{
   width: 250px; 
   height: 250px;
   text-align: center;
+  padding-top: 100px;
   background-image: url('statePages/NoImage.png');
   background-position: center center;
   background-size: 100% 100%;
@@ -182,6 +191,7 @@ footer a{
   width:250px; 
   height:250px;
   text-align: center;
+  padding-top: 100px;
   background-image: url('statePages/NoImage.png');
   background-position: center center;
   background-size: 100% 100%;
@@ -192,6 +202,7 @@ footer a{
   width:250px; 
   height:250px;
   text-align: center;
+  padding-top: 100px;
   background-image: url('statePages/NoImage.png');
   background-position: center center;
   background-size: 100% 100%;
@@ -201,6 +212,27 @@ footer a{
   display: flex;
 }
 
+#skateSelection:hover{
+  border: 1px solid #777;
+}
+
+#parkSelection:hover{
+  border: 1px solid #777;
+}
+
+#rinkSelection:hover{
+  border: 1px solid #777;
+}
+
+#storeSelection:hover{
+  border: 1px solid #777;
+}
+
+#selectPage a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
 
 /********************** All Skatespots **********************/
 
