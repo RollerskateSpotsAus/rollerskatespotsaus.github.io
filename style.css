@@ -357,8 +357,8 @@ div.address div.city{
     margin: 6px 0;
   }
 
-  .pageSidebar{
-    display: none;
+  #selectRow{
+    display: block;
   }
 }
 
@@ -366,6 +366,12 @@ div.address div.city{
   .spot {
     width: 49.99999%;
     margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .pageSidebar{
+    display: none;
   }
 }
 
