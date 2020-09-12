@@ -149,6 +149,12 @@ footer a{
 
 .pageSidebar{
   float: right;
+  width: 150px;
+}
+
+.pageSidebar a{
+  text-decoration: none;
+  color: #19381F;
 }
 
 #skateSelection{
@@ -309,8 +315,9 @@ div.address div.city{
 
 
 
-/************* Mobile ************/
-@media only screen and (max-width: 700px) {
+/************* Screen width changes ************/
+
+@media only screen and (max-width: 950px) {
   .spot {
     width: 49.99999%;
     margin: 6px 0;
@@ -318,6 +325,13 @@ div.address div.city{
 
   .pageSidebar{
     display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .spot {
+    width: 49.99999%;
+    margin: 6px 0;
   }
 }
 
