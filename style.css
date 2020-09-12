@@ -204,7 +204,8 @@ div.address div.city{
 }
 
 
-/************** singular skate spot **************/
+
+/*********************** singular skate spot ******************/
 .spotPage{
   font-family: 'Open Sans', sans-serif;
   padding-left: 10%;
@@ -213,6 +214,10 @@ div.address div.city{
 
 .spotPage img{
   max-height: 10%;
+}
+
+#spotMainImage{
+  width: 100%;
 }
 
 .spotDetails{
