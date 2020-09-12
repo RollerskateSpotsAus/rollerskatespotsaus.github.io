@@ -4,6 +4,9 @@
         <link rel="stylesheet" href="../../style.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Overpass:wght@300&display=swap" rel="stylesheet">
         <title>Rollerskate Spots Australia</title>
+        <div class="logo">
+            <p>Rollerskate Spots Australia</p>
+        </div>
         <div class="nav">
             <div class="info">
                 <a href="../../index.html">Home</a>
@@ -13,7 +16,17 @@
                 <a href="">ACT</a>
                 <a href="">NSW</a>
                 <a href="">NT</a>
-                <a class="active" href="statePages/QLD/QLD_select.html">QLD</a>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <a class="active" href="QLD_select.html">QLD</a><i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="QLD_skatespots.html">Skatespots</a>
+                        <a href="QLD_skateparks.html">Skateparks</a>
+                        <a href="QLD_rollerrinks.html">Roller Rinks</a>
+                        <a href="QLD_skatestores.html">Skate Stores</a>
+                    </div>
+                </div>
                 <a href="">SA</a>
                 <a href="">TAS</a>
                 <a href="">VIC</a>
@@ -24,7 +37,16 @@
 
     <body>
         <div id="page">
-            <h1 id="pageHeading">I'm looking for...</h2>
+            <div id="pageHeading">
+                <h1>I'm looking for...</h1>
+                <p>Find community submitted places to skate in Queensland below.</p>
+            </div>
+
+            <div class="pageSidebar">
+                <h3>Recently updated:</h3>
+                <a href="#">Lovers' Walk</a>
+            </div>
+
             <div id="selectPage">
                 <div id="selectRow">
                     <a href="QLD_skatespots.html">

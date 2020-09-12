@@ -147,10 +147,14 @@ footer a{
 
 /********************** Selection Page **********************/
 
+.pageSidebar{
+  float: right;
+}
+
 #skateSelection{
   margin: 20px;
-  width:200px; 
-  height:200px;
+  width: 250px; 
+  height: 250px;
   text-align: center;
   background-image: url('statePages/NoImage.png');
   background-position: center center;
@@ -159,8 +163,8 @@ footer a{
 
 #parkSelection{
   margin: 20px;
-  width:200px; 
-  height:200px;
+  width: 250px; 
+  height: 250px;
   text-align: center;
   background-image: url('statePages/NoImage.png');
   background-position: center center;
@@ -169,8 +173,8 @@ footer a{
 
 #rinkSelection{
   margin: 20px;
-  width:200px; 
-  height:200px;
+  width:250px; 
+  height:250px;
   text-align: center;
   background-image: url('statePages/NoImage.png');
   background-position: center center;
@@ -179,8 +183,8 @@ footer a{
 
 #storeSelection{
   margin: 20px;
-  width:200px; 
-  height:200px;
+  width:250px; 
+  height:250px;
   text-align: center;
   background-image: url('statePages/NoImage.png');
   background-position: center center;
@@ -245,27 +249,6 @@ div.address div.city{
   width: 24.99999%;
 }
 
-@media only screen and (max-width: 700px) {
-  .spot {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .spot {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-
 /********************** Skatespot Singular **********************/
 .spotPage{
   font-family: 'Open Sans', sans-serif;
@@ -322,4 +305,30 @@ div.address div.city{
 #structureLink a{
   text-decoration: none;
   color:  #19381F;
+}
+
+
+
+/************* Mobile ************/
+@media only screen and (max-width: 700px) {
+  .spot {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+
+  .pageSidebar{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .spot {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
