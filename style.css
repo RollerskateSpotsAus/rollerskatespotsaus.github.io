@@ -120,31 +120,31 @@ footer a{
 
  /* Style the links inside the navigation bar */
 .nav a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .nav a:hover {
-    background-color: #366F34;
-    color: white;
-  }
-  
-  /* Add an active class to highlight the current page */
-  .nav a.active {
-    background-color: #53A548;
-    color: white;
-  }
-  
-  /* Hide the link that should open and close the topnav on small screens */
-  .nav .icon {
-    display: none;
-  }
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+  background-color: #366F34;
+  color: white;
+}
+
+/* Add an active class to highlight the current page */
+.nav a.active {
+  background-color: #53A548;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.nav .icon {
+  display: none;
+}
 
 
 /********************** Selection Page **********************/
