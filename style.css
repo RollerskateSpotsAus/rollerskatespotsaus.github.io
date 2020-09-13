@@ -1,6 +1,12 @@
 /********************** Homepage **********************/
 
+#container{
+  display: flex;
+  flex-direction: column;
+}
+
 footer{
+  bottom: 0px;
   height: 5%;
   background-color: #19381f;
 }
