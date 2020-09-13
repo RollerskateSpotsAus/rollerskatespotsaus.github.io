@@ -347,7 +347,24 @@ div.address div.city{
   color:  #19381F;
 }
 
+#spotUpdate{
+  width: 200px;
+  border: 1px dotted #214625;
+  text-align: center;
+}
 
+#spotUpdateLink{
+  text-decoration: none;
+}
+
+#spotUpdate p{
+  text-decoration: none;
+  color: #214625;
+}
+
+#spotUpdate img{
+  width: 50%;
+}
 
 /************* Screen width changes ************/
 
