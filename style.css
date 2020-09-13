@@ -347,7 +347,15 @@ div.address div.city{
   color:  #19381F;
 }
 
+/* form boxes */
+
 #spotUpdate{
+  width: 200px;
+  border: 1px dotted #214625;
+  text-align: center;
+}
+
+#spotVerifier{
   width: 200px;
   border: 1px dotted #214625;
   text-align: center;
@@ -357,12 +365,25 @@ div.address div.city{
   text-decoration: none;
 }
 
+#spotVerifyLink{
+  text-decoration: none;
+}
+
 #spotUpdate p{
   text-decoration: none;
   color: #214625;
 }
 
+#spotVerifier p{
+  text-decoration: none;
+  color: #214625;
+}
+
 #spotUpdate img{
+  width: 50%;
+}
+
+#spotVerifier img{
   width: 50%;
 }
 
