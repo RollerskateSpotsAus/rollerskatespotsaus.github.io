@@ -347,7 +347,11 @@ div.address div.city{
   color:  #19381F;
 }
 
-/* form boxes */
+/*** form boxes ***/
+
+#formBoxes{
+  display: flex;
+}
 
 #spotUpdate{
   width: 200px;
@@ -355,10 +359,18 @@ div.address div.city{
   text-align: center;
 }
 
+#spotUpdate:hover{
+  background-color: #78AE78;
+}
+
 #spotVerifier{
   width: 200px;
   border: 1px dotted #214625;
   text-align: center;
+}
+
+#spotVerifier:hover{
+  background-color: #78AE78;
 }
 
 #spotUpdateLink{
