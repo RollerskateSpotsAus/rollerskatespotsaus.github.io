@@ -39,7 +39,10 @@ footer a{
   font-family: 'Open Sans', sans-serif;
 }
 
-
+#submissions a{
+  text-decoration: none;
+  color: #19381f;
+}
 
 /********************** About **********************/
 
