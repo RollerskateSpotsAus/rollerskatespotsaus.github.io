@@ -12,8 +12,9 @@ footer{
 }
 
 footer p{
-  padding: 1%;
+  padding-top: 1.5%;
   text-align: center;
+  font-family: 'Grandstander', cursive;
   color: white;
 }
 
@@ -56,6 +57,11 @@ footer a{
   color: #19381f;
 }
 
+#SubVerUpTitle{
+  font-family: 'Grandstander', cursive;
+  font-size: 30px;
+}
+
 /********************** About **********************/
 
 #aboutSkateImage{
@@ -73,7 +79,7 @@ footer a{
 /********************** Navigation **********************/
 .logo{
   background-color: #214625;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Grandstander', cursive;
   color: white;
   font-size: 26px;
   padding-bottom: 1px;
