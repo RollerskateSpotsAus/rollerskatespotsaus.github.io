@@ -76,6 +76,15 @@ footer a{
   color: #2C5B2D;
 }
 
+#aboutPage h1, h2{
+  font-family: 'Grandstander', cursive;
+  font-size: 26px;
+}
+
+#aboutPage h1{
+  font-size: 35px;
+}
+
 /********************** Navigation **********************/
 .logo{
   background-color: #214625;
