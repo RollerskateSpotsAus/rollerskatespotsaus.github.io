@@ -284,6 +284,25 @@ footer a{
   border-bottom: 2px dotted #214625;
 }
 
+#backButton{
+  text-decoration: none;
+  color: #214625;
+  border-radius: 25px;
+  border: 1px solid #78AE78;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#backButton:hover{
+  text-decoration: none;
+  color: #214625;
+  border-radius: 25px;
+  border: 1px solid #214625;
+  background-color: lightgrey;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 /* https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive */
 div.gallery {
   border: 1px solid #ccc;
