@@ -499,7 +499,10 @@ div.address div.city{
     display: block;
   }
 
-  .states.responsive {position: relative;}
+  .states.responsive {
+    position: relative;
+  }
+
   .states.responsive a.icon {
     position: absolute;
     right: 0;
@@ -508,14 +511,17 @@ div.address div.city{
   .states.responsive a {
     float: none;
     display: block;
-    text-align: left;
+    text-align: right;
   }
   .states.responsive .dropdown {float: none;}
   .states.responsive .dropdown-content {position: relative;}
   .states.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
-    text-align: left;
+    text-align: right;
+  }
+  .states.responsive .dropdown-content {
+    display: none;
   }
 }
 
