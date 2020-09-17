@@ -2,6 +2,7 @@
 var textWrapper = document.querySelector('.ml7 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\w+/g, "<span class='word'>$&</span>");
 
+
 anime.timeline({loop: false})
   .add({
     targets: '.ml7 .word',

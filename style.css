@@ -46,6 +46,11 @@ footer a{
   color: honeydew;
 }
 
+.logo a{
+  text-decoration: none;
+  color: white;
+}
+
 #welcome{
   padding-top: 10%;
   padding-bottom: 10%;
