@@ -321,20 +321,11 @@ footer a{
 #backButton{
   text-decoration: none;
   color: #214625;
-  border-radius: 25px;
-  border: 1px solid #78AE78;
-  padding-left: 8px;
-  padding-right: 8px;
 }
 
 #backButton:hover{
   text-decoration: none;
   color: #214625;
-  border-radius: 25px;
-  border: 1px solid #214625;
-  background-color: lightgrey;
-  padding-left: 8px;
-  padding-right: 8px;
 }
 
 /* https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive */
