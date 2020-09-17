@@ -500,6 +500,7 @@ div.address div.city{
   }
 
   .states.responsive {
+    padding-top: 60px;
     position: relative;
   }
 
