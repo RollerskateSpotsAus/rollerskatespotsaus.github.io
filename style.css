@@ -1,5 +1,4 @@
-/********************** Homepage **********************/
-
+/* Javascript */
 
 /* https://tobiasahlin.com/moving-letters/#7 */
 .ml7 {
@@ -14,12 +13,15 @@
   padding-right: 0.05em;
   padding-bottom: 0.1em;
   overflow: hidden;
+  overflow-wrap: normal;
 }
 .ml7 .letter {
   transform-origin: 0 100%;
   display: inline-block;
   line-height: 1em;
 }
+
+/********************** Homepage **********************/
 
 #container{
   display: flex;
