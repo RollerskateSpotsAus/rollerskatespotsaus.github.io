@@ -16,7 +16,7 @@
                 <a href="about.html">About</a>
                 <a target="_blank" href="https://forms.gle/a6THz3bfsVMWswEG8">Submissions</a>
             </div>
-            <div class="states">
+            <div class="states" id="myTopnav">
                 <a href="">ACT</a>
                 <a href="">NSW</a>
                 <a href="">NT</a>
@@ -35,8 +35,20 @@
                 <a href="">TAS</a>
                 <a href="">VIC</a>
                 <a href="">WA</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
         </div>
+        <script>
+            /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+            function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "states") {
+                x.className += " responsive";
+            } else {
+                x.className = "states";
+            }
+            }
+        </script>
     </head>
     <body>
         <div id="page">

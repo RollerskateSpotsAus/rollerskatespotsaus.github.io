@@ -490,6 +490,33 @@ div.address div.city{
   #selectRow{
     display: block;
   }
+
+  .states a, .dropdown .dropbtn {
+    display: none;
+  }
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .states.responsive {position: relative;}
+  .states.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .states.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .states.responsive .dropdown {float: none;}
+  .states.responsive .dropdown-content {position: relative;}
+  .states.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -507,7 +534,6 @@ div.address div.city{
   #formBoxes{
     display: inline-block;
   }
-  
 }
 
 @media only screen and (max-width: 500px) {
