@@ -15,7 +15,7 @@
   overflow: hidden;
   overflow-wrap: normal;
 }
-.ml7 .letter {
+.ml7 .word {
   transform-origin: 0 100%;
   display: inline-block;
   line-height: 1em;
