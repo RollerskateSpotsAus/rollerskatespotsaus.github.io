@@ -211,6 +211,8 @@ footer a{
 }
 
 
+
+
 /********************** Selection Page **********************/
 
 .pageSidebar{
@@ -278,6 +280,10 @@ footer a{
   display: flex;
 }
 
+#selectRow p{
+  font-family: 'Grandstander', cursive;
+}
+
 #skateSelection:hover{
   border: 1px solid #777;
 }
@@ -317,8 +323,8 @@ footer a{
   color: #214625;
   border-radius: 25px;
   border: 1px solid #78AE78;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 #backButton:hover{
@@ -327,8 +333,8 @@ footer a{
   border-radius: 25px;
   border: 1px solid #214625;
   background-color: lightgrey;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 /* https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive */
