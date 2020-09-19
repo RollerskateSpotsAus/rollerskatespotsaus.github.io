@@ -382,6 +382,10 @@ div.address div.city{
   width: 24.99999%;
 }
 
+.desc .name{
+  font-family: 'Grandstander', cursive;
+} 
+
 /********************** Skatespot Singular **********************/
 .spotPage{
   font-family: 'Open Sans', sans-serif;
