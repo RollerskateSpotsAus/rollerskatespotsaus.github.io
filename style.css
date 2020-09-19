@@ -554,6 +554,10 @@ div.address div.city{
     display: none;
   }
 
+  #selectRow{
+    padding-left: 13%;
+  }
+
   #formBoxes{
     display: inline-block;
   }
