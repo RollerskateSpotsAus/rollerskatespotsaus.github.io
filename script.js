@@ -10,7 +10,7 @@ anime.timeline({loop: false})
     translateX: ["0.55em", 0],
     translateZ: 0,
     rotateZ: [180, 0],
-    duration: 1000,
+    duration: 900,
     easing: "easeOutExpo",
     delay: (el, i) => 150 * i
   })

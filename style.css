@@ -495,6 +495,10 @@ div.address div.city{
     margin: 6px 0;
   }
 
+  #aboutSkateImage{
+    width: 40%;
+  }
+
   #selectRow{
     display: block;
   }
@@ -538,6 +542,10 @@ div.address div.city{
   .spot {
     width: 49.99999%;
     margin: 6px 0;
+  }
+
+  #aboutSkateImage{
+    width: 60%;
   }
 }
 
