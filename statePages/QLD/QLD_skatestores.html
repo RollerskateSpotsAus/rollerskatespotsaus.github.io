@@ -6,6 +6,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Overpass:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
         <title>Rollerskate Spots Australia</title>
+        
         <div class="logo">
             <p><a href="../../index.html">Rollerskate Spots Australia</a></p>
         </div>
@@ -15,7 +16,7 @@
                 <a href="../../about.html">About</a>
                 <a target="_blank" href="https://forms.gle/a6THz3bfsVMWswEG8">Submissions</a>
             </div>
-            <div class="states">
+            <div class="states" id="myTopnav">
                 <a href="">ACT</a>
                 <a href="">NSW</a>
                 <a href="">NT</a>
@@ -34,8 +35,20 @@
                 <a href="">TAS</a>
                 <a href="">VIC</a>
                 <a href="">WA</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
         </div>
+        <script>
+            /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+            function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "states") {
+                x.className += " responsive";
+            } else {
+                x.className = "states";
+            }
+            }
+        </script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178249401-1"></script>
         <script>
