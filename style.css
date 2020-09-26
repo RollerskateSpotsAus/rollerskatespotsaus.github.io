@@ -575,7 +575,10 @@ div.address div.city{
   }
 
   #welcomeContainer{
-    background-size: 25% 100%, 25% 100%;
+    background-image: url(mainImages/responsiveBGFull.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100% 100%;
   }
 }
 
@@ -590,10 +593,6 @@ div.address div.city{
 
   #formBoxes{
     display: inline-block;
-  }
-
-  #welcomeContainer{
-    background-size: 30% 100%, 30% 100%;
   }
 }
 
