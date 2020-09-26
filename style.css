@@ -608,7 +608,8 @@ div.address div.city{
     background-image: url(mainImages/responsiveBGFull.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: 100% 100%;
+    background-position: 50% 15%;
+    background-size: 100% 55%;
   }
 
   #submitASpot h2{
