@@ -65,10 +65,11 @@ footer a{
 }
 
 #welcomeContainer{
-  background-image: url(mainImages/homeImage.png);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: 100% 100%;
+  background-image: url(mainImages/leftHome.png), url(mainImages/rightHome.png);
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: scroll, scroll;
+  background-position: left center, right center;
+  background-size: 20% 100%, 20% 100%;
 }
 
 #welcome{
@@ -572,6 +573,10 @@ div.address div.city{
   #aboutSkateImage{
     width: 60%;
   }
+
+  #welcomeContainer{
+    background-size: 25% 100%, 25% 100%;
+  }
 }
 
 @media only screen and (max-width: 580px) {
@@ -585,6 +590,10 @@ div.address div.city{
 
   #formBoxes{
     display: inline-block;
+  }
+
+  #welcomeContainer{
+    background-size: 30% 100%, 30% 100%;
   }
 }
 
