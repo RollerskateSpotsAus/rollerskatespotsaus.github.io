@@ -64,9 +64,18 @@ footer a{
   color: white;
 }
 
+#welcomeContainer{
+  background-image: url(mainImages/homeImage.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100% 100%;
+}
+
 #welcome{
   padding-top: 10%;
   padding-bottom: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
   border-bottom: 1px solid  #214625;
   color: black;
 }
@@ -91,6 +100,11 @@ footer a{
 
 #page{
   font-family: 'Open Sans', sans-serif;
+}
+
+#submissions{
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 #submissions a{
