@@ -280,6 +280,11 @@ footer a{
   width: 150px;
   padding-bottom: 10px;
   border-bottom: 1px solid #214625;
+  background-image: url(mainImages/responsiveBG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100% 100%;
 }
 
 .pageSidebar a{
