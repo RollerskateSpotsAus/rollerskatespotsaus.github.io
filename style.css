@@ -115,9 +115,39 @@ footer a{
   color: #19381f;
 }
 
+#submissions a:hover{
+  text-decoration: none;
+  color: #366F34;
+}
+
 #SubVerUpTitle{
   font-family: 'Grandstander', cursive;
   font-size: 30px;
+  text-align: center;
+}
+
+#submitASpot h2{
+  background-image: url(mainImages/submitSpot.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: scroll;
+  background-size: 50% 100%;
+}
+
+#verifyASpot h2{
+  background-image: url(mainImages/verifySpot.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: scroll;
+  background-size: 50% 100%;
+}
+
+#updateASpot h2{
+  background-image: url(mainImages/updateSpot.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: scroll;
+  background-size: 50% 100%;
 }
 
 /********************** About **********************/
@@ -578,6 +608,18 @@ div.address div.city{
     background-image: url(mainImages/responsiveBGFull.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
+    background-size: 100% 100%;
+  }
+
+  #submitASpot h2{
+    background-size: 100% 100%;
+  }
+
+  #verifyASpot h2{
+    background-size: 100% 100%;
+  }
+
+  #updateASpot h2{
     background-size: 100% 100%;
   }
 }
