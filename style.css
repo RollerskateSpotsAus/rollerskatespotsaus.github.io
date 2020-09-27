@@ -644,8 +644,9 @@ div.address div.city{
     display: none;
   }
 
-  #selectRow{
-    padding-left: 13%;
+  #skateSelection, #parkSelection, #rinkSelection, #storeSelection{
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #formBoxes{
