@@ -65,7 +65,7 @@ footer a{
 }
 
 #welcomeContainer{
-  background-image: url(mainImages/leftHome.png), url(mainImages/rightHome.png);
+  background-image: url(mainImages/homeLeft.png), url(mainImages/homeRight.png);
   background-repeat: no-repeat, no-repeat;
   background-attachment: scroll, scroll;
   background-position: left center, right center;
@@ -315,6 +315,7 @@ footer a{
   background-image: url('statePages/NoImage.png');
   background-position: center center;
   background-size: 100% 100%;
+  border-radius: 25%;
 }
 
 #parkSelection{
@@ -326,6 +327,7 @@ footer a{
   background-image: url('statePages/NoImage.png');
   background-position: center center;
   background-size: 100% 100%;
+  border-radius: 25%;
 }
 
 #rinkSelection{
@@ -337,6 +339,7 @@ footer a{
   background-image: url('statePages/NoImage.png');
   background-position: center center;
   background-size: 100% 100%;
+  border-radius: 25%;
 }
 
 #storeSelection{
@@ -348,6 +351,7 @@ footer a{
   background-image: url('statePages/NoImage.png');
   background-position: center center;
   background-size: 100% 100%;
+  border-radius: 25%;
 }
 
 #selectRow{
@@ -359,19 +363,19 @@ footer a{
 }
 
 #skateSelection:hover{
-  border: 1px solid #777;
+  border: 1px solid #53A548;
 }
 
 #parkSelection:hover{
-  border: 1px solid #777;
+  border: 1px solid #53A548;
 }
 
 #rinkSelection:hover{
-  border: 1px solid #777;
+  border: 1px solid #53A548;
 }
 
 #storeSelection:hover{
-  border: 1px solid #777;
+  border: 1px solid #53A548;
 }
 
 #selectPage a{
@@ -408,7 +412,7 @@ div.gallery {
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 1px solid #53A548;
 }
 
 div.gallery img {
