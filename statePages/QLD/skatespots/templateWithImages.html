@@ -59,11 +59,69 @@
         </script>
     </head>
 
-    <body>
+    <body onload="currentSlide(1)">
+        <script src="spotsScript.js"></script>
         <div class="spotPage">
             <p id="structureLink"><i><a href="../QLD_select.html"> Queensland</a> / <a href="../QLD_skatespots.html">Skatespots</a> / Lovers' Walk</i></p>
 
-            <img id="spotMainImage" src="../../spotHolder.png">
+            <!-- Full-width images with number text -->
+            <div class="imageGal">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="../../spotHolder.png">
+                </div>
+    
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="../../spotHolder.png">
+                </div>
+    
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="../../spotHolder.png">
+                </div>
+    
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="../../spotHolder.png">
+                </div>
+    
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="../../spotHolder.png">
+                </div>
+    
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="../../spotHolder.png">
+                </div>
+    
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                    <img class="demo cursor" src="../../spotHolder.png" onclick="currentSlide(1)" alt="one">
+                    </div>
+                    <div class="column"> 
+                    <img class="demo cursor" src="../../spotHolder.png" onclick="currentSlide(2)" alt="two">
+                    </div>
+                    <div class="column">
+                    <img class="demo cursor" src="../../spotHolder.png" onclick="currentSlide(3)" alt="three">
+                    </div>
+                    <div class="column">
+                    <img class="demo cursor" src="../../spotHolder.png" onclick="currentSlide(4)" alt="four">
+                    </div>
+                    <div class="column">
+                    <img class="demo cursor" src="../../spotHolder.png" onclick="currentSlide(5)" alt="five">
+                    </div> 
+                    <div class="column">
+                    <img class="demo cursor" src="../../spotHolder.png" onclick="currentSlide(6)" alt="six">
+                    </div>
+                </div>
+            </div>
 
             <div class="spotDetails">
                 <div id="spotDesc">
