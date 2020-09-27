@@ -157,6 +157,15 @@ footer a{
   margin-left: auto;
   margin-right: auto;
   width: 25%;
+  border-radius: 50%;
+}
+
+#skateBackground{
+  background-image: url(mainImages/responsiveBGFull.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
 #aboutPage a{
