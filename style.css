@@ -266,12 +266,14 @@ footer a{
 .nav a:hover {
   background-color: #366F34;
   color: white;
+  border-radius: 50%;
 }
 
 /* Add an active class to highlight the current page */
 .nav a.active {
   background-color: #53A548;
   color: white;
+  border-radius: 50%;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
