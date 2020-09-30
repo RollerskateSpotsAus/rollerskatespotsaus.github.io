@@ -1,0 +1,13 @@
+********************** ACT_select.html *********************************
+
+<div id="nav-placeholder"></div>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$.get("../stateNav.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+    document.getElementById("ACT").className = "active";
+});
+</script>
+
+***********************************************************************

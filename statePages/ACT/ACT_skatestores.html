@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Overpass:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
+        <title>Rollerskate Spots Australia</title>
+        
+        <div class="logo">
+            <p><a href="../../index.html">Rollerskate Spots Australia</a></p>
+        </div>
+        <div class="nav">
+            <div class="info">
+                <a href="../../index.html">Home</a>
+                <a href="../../about.html">About</a>
+                <a target="_blank" href="https://forms.gle/a6THz3bfsVMWswEG8">Submissions</a>
+            </div>
+            <div class="states" id="myTopnav">
+                <a href="">ACT</a>
+                <a href="">NSW</a>
+                <a href="">NT</a>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <a class="active" href="QLD_select.html">QLD</a><i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="QLD_skatespots.html">Skatespots</a>
+                        <a href="QLD_skateparks.html">Skateparks</a>
+                        <a href="QLD_rollerrinks.html">Roller Rinks</a>
+                        <a href="QLD_skatestores.html">Skate Stores</a>
+                    </div>
+                </div>
+                <a href="">SA</a>
+                <a href="">TAS</a>
+                <a href="">VIC</a>
+                <a href="">WA</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </div>
+        <script>
+            /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+            function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "states") {
+                x.className += " responsive";
+            } else {
+                x.className = "states";
+            }
+            }
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178249401-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-178249401-1');
+        </script>
+    </head>
+    
+    <div id="container">
+        <body>
+            <div class="skatePage">
+                <div id="pageHeading">
+                    <p><i><a id="backButton" href="QLD_select.html">Queensland</a></i></p>
+                    <h1>Skate Stores in Queensland</h1>
+                    <p>Here are some skate stores found in Queensland.
+                </div>
+                <div class="locations">
+                    <div class="spot">
+                        <div class="gallery">
+                            <a href="skatestores/extremeskates.html">
+                                <img id="spotGalleryImage" src="../NoImage.png">
+                            </a>
+                            <div class="desc">
+                                <div class="name">Extreme Skates</div>
+                                <div class="address">14 Parkview St, Milton QLD 4064</div>
+                                <div class="city">Milton, Brisbane | Yuggera</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+        <footer>
+            <p>
+                Created by <a href="https://github.com/CelineLind">CelineLind</a> 2020 
+                <br>
+                This website was built on <a href="../../about.html">Yuggera land.</a>
+            </p>
+        </footer>
+    </div>
+</html>
