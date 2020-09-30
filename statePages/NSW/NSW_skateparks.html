@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Overpass:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
+        <title>Rollerskate Spots Australia</title>
+        <div class="logo">
+            <p><a href="../../index.html">Rollerskate Spots Australia</a></p>
+        </div>
+        <div id="nav-placeholder"></div>
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+        $.get("../stateNav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+            document.getElementById("NSW").className = "active";
+        });
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178249401-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-178249401-1');
+        </script>
+    </head>
+    
+    <div id="container">
+        <body>
+            <div class="skatePage">
+                <div id="pageHeading">
+                    <p><i><a id="backButton" href="NSW_select.html">NSW</a></i></p>
+                    <h1>Skateparks in New South Wales</h1>
+                    <p>Here are some skateparks found in NSW.
+                </div>
+                <div id="nothingSubmitted">
+                    <h2>Nothing has been submitted yet. Be the first by submitting <a href="https://forms.gle/a6THz3bfsVMWswEG8">Here!</a></h2>
+                </div>
+            </div>
+        </body>
+        <footer>
+            <div id="footer-placeholder"></div>
+            <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+            <script>
+            $.get("../../../../footer.html", function(data){
+                $("#footer-placeholder").replaceWith(data);
+            });
+            </script>
+        </footer>
+    </div>
+</html>
