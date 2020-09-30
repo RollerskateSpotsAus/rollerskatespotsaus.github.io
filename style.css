@@ -408,6 +408,21 @@ footer a{
   color: #214625;
 }
 
+#nothingSubmitted{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+#nothingSubmitted a{
+  text-decoration: none;
+  color: #366F34;
+}
+
+#nothingSubmitted a:hover{
+  color: #53A548;
+}
+
 /* https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive */
 div.gallery {
   border: 1px solid #ccc;

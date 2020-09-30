@@ -95,10 +95,12 @@
     </div>
 </body>
 <footer>
-    <p>
-        Created by <a href="https://github.com/CelineLind">CelineLind</a> 2020 
-        <br>
-        This website was built on <a href="about.html">Yuggera land.</a>
-    </p>
+    <div id="footer-placeholder"></div>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+    $.get("footer.html", function(data){
+        $("#footer-placeholder").replaceWith(data);
+    });
+    </script>
 </footer>
 </html>

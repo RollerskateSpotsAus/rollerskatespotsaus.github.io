@@ -10,4 +10,17 @@ $.get("../stateNav.html", function(data){
 });
 </script>
 
-***********************************************************************
+
+<div id="footer-placeholder"></div>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$.get("../../../../footer.html", function(data){
+$("#footer-placeholder").replaceWith(data);
+});
+</script>
+
+************************ empty skatespot ******************************
+
+<div id="nothingSubmitted">
+    <h2>Nothing has been submitted yet. Be the first by submitting <a href="https://forms.gle/a6THz3bfsVMWswEG8">Here!</a></h2>
+</div>
