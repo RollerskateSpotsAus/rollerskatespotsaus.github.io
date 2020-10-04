@@ -526,10 +526,6 @@ div.address div.city{
   color:  #19381F;
 }
 
-#googleMap iframe{
-  
-}
-
 /*** form boxes ***/
 
 #formBoxes{
@@ -584,16 +580,7 @@ div.address div.city{
 
 /*  image gallery  */
 .imageGal {
-  box-sizing: border-box;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.imageGal {
   position: relative;
-}
-
-.imageGal img{
-  width: 100%;
 }
 
 /* Hide the images by default */
