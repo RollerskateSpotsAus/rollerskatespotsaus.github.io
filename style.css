@@ -498,7 +498,7 @@ div.address div.city{
   border-radius: 25px;
   border: 2px solid  #53A548;
   padding-left: 26px;
-  max-width: 350px;
+  max-width: 100%;
 }
 
 #spotTitle{
