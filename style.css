@@ -433,8 +433,9 @@ div.gallery:hover {
 }
 
 div.gallery img {
-  width: 100%;
-  height: auto;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
 }
 
 div.desc {
@@ -587,6 +588,7 @@ div.address div.city{
 .mySlides {
   display: none;
 }
+
 
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
