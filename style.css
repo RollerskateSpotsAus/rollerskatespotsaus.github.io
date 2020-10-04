@@ -526,6 +526,10 @@ div.address div.city{
   color:  #19381F;
 }
 
+#googleMap iframe{
+  
+}
+
 /*** form boxes ***/
 
 #formBoxes{
