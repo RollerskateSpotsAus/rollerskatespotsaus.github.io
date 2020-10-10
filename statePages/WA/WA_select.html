@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Overpass:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
+        <title>Rollerskate Spots Australia</title>
+        <div class="logo">
+            <p><a href="../../index.html">Rollerskate Spots Australia</a></p>
+        </div>
+        <div id="nav-placeholder"></div>
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+        $.get("../stateNav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+            document.getElementById("WA").className = "active";
+        });
+        </script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178249401-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-178249401-1');
+        </script>
+    </head>
+
+    <body>
+        <div id="page">
+            <div id="pageHeading">
+                <h1>I'm looking for...</h1>
+                <p>Find community submitted places to skate in Western Australia below.</p>
+            </div>
+
+            <div class="pageSidebar">
+                <h3>Recently updated:</h3>
+                <a target="_blank" href="https://forms.gle/a6THz3bfsVMWswEG8">Be the first to submit a spot!</a>
+                <br>
+            </div>
+
+            <div id="selectPage">
+                <div id="selectRow">
+                    <a href="WA_skatespots.html">
+                        <div id="skateSelection">
+                            <p>Skate Spots</p>
+                        </div>
+                    </a>
+                    <a href="WA_skateparks.html">
+                        <div id="parkSelection">
+                            <p>Skateparks</p>
+                        </div>
+                    </a>
+                </div>
+                <div id="selectRow">
+                    <a href="WA_rollerrinks.html">
+                        <div id="rinkSelection">
+                            <p>Roller Rinks</p>
+                        </div>
+                    </a>
+                    <a href="WA_skatestores.html">
+                        <div id="storeSelection">
+                            <p>Skate Stores</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div id="footer-placeholder"></div>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+        $.get("../../footer.html", function(data){
+        $("#footer-placeholder").replaceWith(data);
+        });
+        </script>
+    </footer>
+</html>
