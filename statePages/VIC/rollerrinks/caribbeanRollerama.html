@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../../style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Overpass:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
+        <title>Rollerskate Spots Australia</title>
+        <div class="logo">
+            <p><a href="../../../index.html">Rollerskate Spots Australia</a></p>
+        </div>
+        <div id="nav-placeholder"></div>
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+        $.get("../../spotNav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+            document.getElementById("VIC").className = "active";
+        });
+        </script>
+        <script>
+            /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+            function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "states") {
+                x.className += " responsive";
+            } else {
+                x.className = "states";
+            }
+            }
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178249401-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-178249401-1');
+        </script>
+    </head>
+
+    <body>
+        <div class="spotPage">
+            <p id="structureLink"><i><a href="../QLD_select.html"> Victoria</a> / <a href="../VIC_rollerrinks.html">Roller Rinks</a> / Caribbean Rollerama</i></p>
+
+            <img id="spotMainImage" src="../../spotHolder.png">
+
+            <div class="spotDetails">
+                <div id="spotDesc">
+                    <h2 id="spotTitle">
+                        <a href="../../../about.html"><img id="verification" src="../../verified.png" alt="verified"></a>
+                        Caribbean Rollerama
+                    </h2>
+                    <p id="spotAddress"><b>Address:</b> 1298 Ferntree Gully Rd, Scoresby VIC 3179</p>
+                    <p id="spotCity"><b>City:</b> Scoresby, Melbourne // Woiworung </p>
+                </div>
+                <div id="spotInfo">
+                    <h2 id="title">Information</h2>
+                    <p>
+                        This roller rink is perfect for all skill levels, hosting skate sessions as well as artistic and speed skating lessons.
+                    </p>
+                    <h2 id="title">Website and social media:</h2>
+                    <p>
+                        Website: <a href="https://caribbeanrollerama.com.au">https://caribbeanrollerama.com.au</a>
+                        <br>
+                        Facebook: <a href="https://www.facebook.com/caribbeanrollerama">https://www.facebook.com/caribbeanrollerama</a>
+                    </p>
+                </div>
+
+                <br>
+                <div id="googleMap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.2987167497154!2d145.22398395086378!3d-37.90007997963738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad63ddf8bde2f41%3A0x29658c79e0b05fcd!2sCaribbean%20Rollerama!5e0!3m2!1sen!2sau!4v1602574038503!5m2!1sen!2sau" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <br>
+
+                <div id="formBoxes">
+                    <a id="spotUpdateLink" target="_blank" href="https://forms.gle/nWYR9YvSEjAmKAYBA">
+                        <div id="spotUpdate">
+                            <p>Update this roller rink</p>
+                            <img src="../../../mainImages/formIcon.png">    
+                        </div>
+                    </a>
+                </div>
+                <p id="spotMaps"></p>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <p>
+            Created by <a href="https://github.com/CelineLind">CelineLind</a> 2020 
+            <br>
+            This website was built on <a href="../../../about.html">Yuggera land.</a>
+        </p>
+    </footer>
+</html>
