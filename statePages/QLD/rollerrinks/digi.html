@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../../style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Overpass:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
+        <title>Rollerskate Spots Australia</title>
+        <div class="logo">
+            <p><a href="../../../index.html">Rollerskate Spots Australia</a></p>
+        </div>
+        <div id="nav-placeholder"></div>
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+        $.get("../../spotNav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+            document.getElementById("QLD").className = "active";
+        });
+        </script>
+        <script>
+            /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+            function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "states") {
+                x.className += " responsive";
+            } else {
+                x.className = "states";
+            }
+            }
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178249401-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-178249401-1');
+        </script>
+    </head>
+
+    <body>
+        <div class="spotPage">
+            <p id="structureLink"><i><a href="../QLD_select.html"> Queensland</a> / <a href="../QLD_rollerrinks.html">Roller Rinks</a> / Digi Roller Skating</i></p>
+
+            <img id="spotMainImage" src="../../spotHolder.png">
+
+            <div class="spotDetails">
+                <div id="spotDesc">
+                    <h2 id="spotTitle">
+                        <a href="../../../about.html"><img id="verification" src="../../verified.png" alt="verified"></a>
+                        Digi Roller Skating
+                    </h2>
+                    <p id="spotAddress"><b>Address:</b> 40-44 Johnson Rd, Hillcrest 4118 </p>
+                    <p id="spotCity"><b>City:</b> Logan, Brisbane // Yuggera</p>
+                </div>
+                <div id="spotInfo">
+                    <h2 id="title">Information</h2>
+                    <p>
+                        This roller rink is located in Logan.
+                    </p>
+                    <h2 id="title">Website and social media:</h2>
+                    <p>
+                        Website: <a href="https://www.digiskating.com.au">https://www.digiskating.com.au</a>
+                        <br>
+                        Facebook: <a href="https://www.facebook.com/DigiSkating/">https://www.facebook.com/DigiSkating/</a>
+                    </p>
+                </div>
+
+                <br>
+                <div id="googleMap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.854901701492!2d153.03162561503456!3d-27.65996058281159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b914615f5a5793d%3A0x93f8f44a510b79f9!2sDigi%20Roller%20Skating%20(For%20PROSHOP%20see%20SKATETRADER)!5e0!3m2!1sen!2sau!4v1602572707150!5m2!1sen!2sau" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <br>
+
+                <div id="formBoxes">
+                    <a id="spotUpdateLink" target="_blank" href="https://forms.gle/nWYR9YvSEjAmKAYBA">
+                        <div id="spotUpdate">
+                            <p>Update this roller rink</p>
+                            <img src="../../../mainImages/formIcon.png">    
+                        </div>
+                    </a>
+                </div>
+                <p id="spotMaps"></p>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <p>
+            Created by <a href="https://github.com/CelineLind">CelineLind</a> 2020 
+            <br>
+            This website was built on <a href="../../../about.html">Yuggera land.</a>
+        </p>
+    </footer>
+</html>
