@@ -40,11 +40,39 @@
         </script>
     </head>
 
-    <body>
+    <body onload="currentSlide(1)">
+        <script src="spotsScript.js"></script>
         <div class="spotPage">
             <p id="structureLink"><i><a href="../QLD_select.html"> Victoria</a> / <a href="../VIC_rollerrinks.html">Roller Rinks</a> / Caribbean Rollerama</i></p>
 
-            <img id="spotMainImage" src="../../spotHolder.png">
+            <div id="spotImages">
+                <!-- Full-width images with number text -->
+                <div class="imageGal">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 2</div>
+                        <img src="rollerrinksImages/caribbean.png">
+                    </div>
+        
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 2</div>
+                        <img src="rollerrinksImages/insideCaribbean.png">
+                    </div>
+        
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+                    <!-- Thumbnail images -->
+                    <div class="row">
+                        <div class="column">
+                        <img class="demo cursor" src="rollerrinksImages/caribbean.png" onclick="currentSlide(1)" alt="one">
+                        </div>
+                        <div class="column"> 
+                        <img class="demo cursor" src="rollerrinksImages/insideCaribbean.png" onclick="currentSlide(2)" alt="two">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="spotDetails">
                 <div id="spotDesc">
