@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../../style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Overpass:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
+        <title>Rollerskate Spots Australia</title>
+        <div class="logo">
+            <p><a href="../../../index.html">Rollerskate Spots Australia</a></p>
+        </div>
+        <div id="nav-placeholder"></div>
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+        $.get("../../spotNav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+            document.getElementById("VIC").className = "active";
+        });
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178249401-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-178249401-1');
+        </script>
+    </head>
+
+    <body onload="currentSlide(1)">
+        <script src="spotsScript.js"></script>
+        <div class="spotPage">
+            <p id="structureLink"><i><a href="../VIC_select.html"> Victoria</a> / <a href="../VIC_skatespots.html">Skatespots</a> / Lakewood Lake</i></p>
+
+            <div id="spotImages">
+                <!-- Full-width images with number text -->
+                <div class="imageGal">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="skatespotsImages/forestTrail.png">
+                    </div>
+        
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="skatespotsImages/sunriseLake.png">
+                    </div>
+        
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="skatespotsImages/lighterSunriseLake.png">
+                    </div>
+        
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+                    <!-- Thumbnail images -->
+                    <div class="row">
+                        <div class="column">
+                        <img class="demo cursor" src="skatespotsImages/forestTrail.png" onclick="currentSlide(1)" alt="one">
+                        </div>
+                        <div class="column"> 
+                        <img class="demo cursor" src="skatespotsImages/sunriseLake.png" onclick="currentSlide(2)" alt="two">
+                        </div>
+                        <div class="column">
+                        <img class="demo cursor" src="skatespotsImages/lighterSunriseLake.png" onclick="currentSlide(3)" alt="three">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spotDetails">
+                <div id="spotDesc">
+                    <h2 id="spotTitle">
+                        <a href="../../../about.html"><img id="verification" src="../../unverified.png" alt="verified"></a>
+                        Lakewood Lake
+                    </h2>
+                    <p id="spotAddress"><b>Address:</b> Lakewood Dr, Knoxfield VIC 3180</p>
+                    <p id="spotCity"><b>City:</b> Lakewood Lake, Knoxfield // Boonwurrung </p>
+                </div>
+                <div id="spotInfo">
+                    <h2 id="title">Information</h2>
+                    <p>
+                        A lovely scenic path just over 1km circumference. Fairly smooth concrete but with a decent 
+                        amount of twigs and whatnot, so definitely need some balance to skate here. Some nice little 
+                        hills to go up and down, and nice views the whole way. Fun for cruising.
+                    </p>
+                    <p id="spotVerify"><a href="../../../about.html"><b>Verified:</b> No</a></p>
+                </div>
+                <div id="spotFeatures">
+                    <p><b>Slope:</b> Small hills</p>
+                    <p><b>Surface:</b> Rough Concrete</p>
+                    <p><b>Cracks:</b> Small, Medium</p>
+                    <p><b>Difficulty:</b> Intermediate</p>
+                </div>
+
+                <br>
+                <div id="googleMap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25193.558074579167!2d145.23524594257853!3d-37.879127793173794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad63c47a109b919%3A0xf04567605313c30!2sLakewood%20Nature%20Reserve!5e0!3m2!1sen!2sau!4v1603522089854!5m2!1sen!2sau" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <br>
+
+                <div id="formBoxes">
+                    <a id="spotUpdateLink" target="_blank" href="https://forms.gle/nWYR9YvSEjAmKAYBA">
+                        <div id="spotUpdate">
+                            <p>Update this skate spot</p>
+                            <img src="../../../mainImages/formIcon.png">    
+                        </div>
+                    </a>
+                    <a id="spotUpdateLink" target="_blank" href="https://forms.gle/Us1S68pRBADVyXbu9">
+                        <div id="spotUpdate">
+                            <p>Verify this skate spot</p>
+                            <img src="../../../mainImages/formIcon.png">    
+                        </div>
+                    </a>
+                </div>
+                
+                <p id="spotMaps"></p>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div id="footer-placeholder"></div>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+        $.get("../../../../footer.html", function(data){
+        $("#footer-placeholder").replaceWith(data);
+        });
+        </script>
+    </footer>
+</html>
