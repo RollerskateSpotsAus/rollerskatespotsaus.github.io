@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../../style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Overpass:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
+        <title>Rollerskate Spots Australia</title>
+        <div class="logo">
+            <p><a href="../../../index.html">Rollerskate Spots Australia</a></p>
+        </div>
+        <div id="nav-placeholder"></div>
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+        $.get("../../spotNav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+            document.getElementById("QLD").className = "active";
+        });
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178249401-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-178249401-1');
+        </script>
+    </head>
+
+    <body onload="currentSlide(1)">
+        <script src="spotsScript.js"></script>
+        <div class="spotPage">
+            <p id="structureLink"><i><a href="../QLD_select.html"> Queensland</a> / <a href="../QLD_skatespots.html">Skatespots</a> / The Strand</i></p>
+
+            <img id="spotMainImage" src="../../spotHolder.png">
+
+            <div class="spotDetails">
+                <div id="spotDesc">
+                    <h2 id="spotTitle">
+                        <a href="../../../about.html"><img id="verification" src="../../unverified.png" alt="verified"></a>
+                        The Strand
+                    </h2>
+                    <p id="spotAddress"><b>Address:</b> The Strand, North Ward, Townsville</p>
+                    <p id="spotCity"><b>City:</b> North Ward, Townsville // Gurrambilbarra Wulgurukaba People</p>
+                </div>
+                <div id="spotInfo">
+                    <h2 id="title">Information</h2>
+                    <p>
+                        A beautiful 2.5km esplanade with amazing views and cracks so small you can barely feel yourself rolling over them. 
+                        Can get quite busy on weekends, so best to visit weekdays if you are a beginner.
+                    </p>
+                    <p id="spotVerify"><a href="../../../about.html"><b>Verified:</b> No</a></p>
+                </div>
+                <div id="spotFeatures">
+                    <p><b>Slope:</b> Flat</p>
+                    <p><b>Surface:</b> Smooth Bikeway Concrete</p>
+                    <p><b>Cracks:</b> Small</p>
+                    <p><b>Difficulty:</b> Beginner</p>
+                </div>
+
+                <br>
+                <div id="googleMap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.779365341355!2d146.81121641493945!3d-19.24844512244732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6bd5f8c6c205906f%3A0x11774eab19c44fb1!2sThe%20Strand%2C%20North%20Ward%20QLD%204810!5e0!3m2!1sen!2sau!4v1603694978654!5m2!1sen!2sau" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <br>
+
+                <div id="formBoxes">
+                    <a id="spotUpdateLink" target="_blank" href="https://forms.gle/nWYR9YvSEjAmKAYBA">
+                        <div id="spotUpdate">
+                            <p>Update this skate spot</p>
+                            <img src="../../../mainImages/formIcon.png">    
+                        </div>
+                    </a>
+                </div>
+                
+                <p id="spotMaps"></p>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div id="footer-placeholder"></div>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+        $.get("../../../../footer.html", function(data){
+        $("#footer-placeholder").replaceWith(data);
+        });
+        </script>
+    </footer>
+</html>
