@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../../style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Overpass:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
+        <title>Rollerskate Spots Australia</title>
+        <div class="logo">
+            <p><a href="../../../index.html">Rollerskate Spots Australia</a></p>
+        </div>
+        <div id="nav-placeholder"></div>
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+        $.get("../../spotNav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+            document.getElementById("QLD").className = "active";
+        });
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178249401-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-178249401-1');
+        </script>
+    </head>
+
+    <body onload="currentSlide(1)">
+        <script src="spotsScript.js"></script>
+        <div class="spotPage">
+            <p id="structureLink"><i><a href="../QLD_select.html"> Queensland</a> / <a href="../QLD_skatespots.html">Skatespots</a> / Rocks Riverside Promenade</i></p>
+
+            <img id="spotMainImage" src="../../spotHolder.png">
+
+            <div class="spotDetails">
+                <div id="spotDesc">
+                    <h2 id="spotTitle">
+                        <a href="../../../about.html"><img id="verification" src="../../verified.png" alt="verified"></a>
+                        Riverside Promenade
+                    </h2>
+                    <p id="spotAddress"><b>Address:</b> 531 Seventeen Mile Rocks Rd, Seventeen Mile Rocks QLD 4073</p>
+                    <p id="spotCity"><b>City:</b> Seventeen Mile Rocks, Brisbane // Yuggera</p>
+                </div>
+                <div id="spotInfo">
+                    <h2 id="title">Information</h2>
+                    <p>
+                        Scenic route from Rocks Riverside Park to the Centenary Highway. 
+                        The part along the park is rough gravelly road and the cement section begins at the end of Counihan Rd. 
+                        The gaps between the sections of cement can get pretty bumpy and there's a section closer to the bridge 
+                        which has new patches to fill in cracks. It may be tricky for beginners. There's some slopes which are 
+                        easily walkable but can be difficult to climb on skates. There is a skatepark at the end.
+                    </p>
+                    <p id="spotVerify"><a href="../../../about.html"><b>Verified:</b> Yes</a></p>
+                </div>
+                <div id="spotFeatures">
+                    <p><b>Slope:</b> Sloped sections</p>
+                    <p><b>Surface:</b> Smooth and rough Concrete</p>
+                    <p><b>Cracks:</b> Medium</p>
+                    <p><b>Difficulty:</b> Intermediate</p>
+                </div>
+
+                <br>
+                <div id="googleMap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14150.664136800724!2d152.96047090000002!3d-27.54183279999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf02a35bd72232d0!2sRocks%20Riverside%20Park!5e0!3m2!1sen!2sau!4v1610597103461!5m2!1sen!2sau" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <br>
+
+                <div id="formBoxes">
+                    <a id="spotUpdateLink" target="_blank" href="https://forms.gle/nWYR9YvSEjAmKAYBA">
+                        <div id="spotUpdate">
+                            <p>Update this skate spot</p>
+                            <img src="../../../mainImages/formIcon.png">    
+                        </div>
+                    </a>
+                </div>
+                
+                <p id="spotMaps"></p>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div id="footer-placeholder"></div>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+        $.get("../../../../footer.html", function(data){
+        $("#footer-placeholder").replaceWith(data);
+        });
+        </script>
+    </footer>
+</html>
