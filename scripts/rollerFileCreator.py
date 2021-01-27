@@ -4,50 +4,62 @@
 
 ##########
 
+import codecs # for opening html files
+import os # for checking if file exists
+
 def skatespot():
     print("Creating new skatespot...")
     
     # read template file
-    readTemplate = open("spotTemplate.html", "r")
+    readTemplate = codecs.open("scripts/spotTemplate.html", "r")
+    print(readTemplate.read())
     
     # create new file
     fileName = locationName.replace(" ", "")
 
-    ### if file already exists, delete context and write to it
-    newFile = open(fileName+".html", "x")
+    # if file already exists, delete and create a new file
+    if os.path.exists(fileName+".html"):
+        os.remove(fileName+".html")
+    newFile = open(fileName+".html", "x") 
     
     # write template text to file
-    newFile.write(str(readTemplate))
+    # newFile.write(str(readTemplate))
+    fillTemplate = str(readTemplate.read())
+    print(fillTemplate)
 
     ## replace text in template
     # replace info
-    newFile.replace(STATE_REPLACE, state)
-    newFile.replace(STATE_FULL_REPLACE, fullState)
-    newFile.replace(LOCATION_REPLACE, location)
-    newFile.replace(ADDRESS_REPLACE, address)
-    newFile.replace(CITY_LAND_REPLACE, city+" // "+land)
-    newFile.replace(INFORMATION_REPLACE, bio)
-    newFile.replace(VERIFIED_REPLACE, verified)
-    newFile.replace(VERIFY_YESNO_REPLACE, verificationYN)
+    fillTemplate.replace("STATE_REPLACE", state)
+    fillTemplate.replace("STATE_FULL_REPLACE", fullState)
+    fillTemplate.replace("LOCATION_REPLACE", locationName)
+    fillTemplate.replace("ADDRESS_REPLACE", address)
+    fillTemplate.replace("CITY_LAND_REPLACE", city+" // "+land)
+    fillTemplate.replace("INFORMATION_REPLACE", bio)
+    fillTemplate.replace("VERIFIED_REPLACE", verified)
+    fillTemplate.replace("VERIFY_YESNO_REPLACE", verificationYN)
 
     # replace update and verify html buttons
-    updateForm = open("updateForm.html", r)
-    newFile.replace(SPOTUPDATE_REPLACE, updateForm)
-    if verificationYN == no:
-        verifyForm = open("verifyForm.html", r)
-        newFile.replace(SPOTUPDATE_REPLACE, verifyForm)
+    updateForm = open("scripts/updateForm.html", "r")
+    fillTemplate.replace("SPOTUPDATE_REPLACE", str(updateForm))
+    if verificationYN == "No" or verificationYN == "no" or verificationYN == "NO":
+        verifyForm = open("scripts/verifyForm.html", "r")
+        fillTemplate.replace("SPOTUPDATE_REPLACE", str(verifyForm))
     else:
-        newFile.replace(SPOTUPDATE_REPLACE, " ")
+        fillTemplate.replace("SPOTUPDATE_REPLACE", " ")
 
     # replace spot specific
     slope = input("What is the slope like? ")
-    newFile.replace(SLOPE_REPLACE, slope)
+    fillTemplate.replace("SLOPE_REPLACE", slope)
     surface = input("What is the surface like? ")
-    newFile.replace(SURFACE_REPLACE, surface)
+    fillTemplate.replace("SURFACE_REPLACE", surface)
     cracks = input("What are the cracks like? ")
-    newFile.replace(CRACKS_REPLACE, cracks)
+    fillTemplate.replace("CRACKS_REPLACE", cracks)
     diff = input("What is the difficulty? ")
-    newFile.replace(DIFFICULTY_REPLACE, diff)
+    fillTemplate.replace("DIFFICULTY_REPLACE", diff)
+
+    # write to file
+    newFile.write(fillTemplate)
+    newFile.close()
 
     # completed
     print("The new skatespot file has been created!")
