@@ -12,7 +12,6 @@ def skatespot():
     
     # read template file
     readTemplate = codecs.open("scripts/spotTemplate.html", "r")
-    print(readTemplate.read())
     
     # create new file
     fileName = locationName.replace(" ", "")
@@ -25,7 +24,8 @@ def skatespot():
     # write template text to file
     # newFile.write(str(readTemplate))
     fillTemplate = str(readTemplate.read())
-    print(fillTemplate)
+
+    # TODO: it isn't replacing the words
 
     ## replace text in template
     # replace info
@@ -58,7 +58,8 @@ def skatespot():
     fillTemplate.replace("DIFFICULTY_REPLACE", diff)
 
     # write to file
-    newFile.write(fillTemplate)
+    newFile.write(str(fillTemplate))
+    print(str(fillTemplate))
     newFile.close()
 
     # completed
