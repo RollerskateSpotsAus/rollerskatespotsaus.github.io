@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../../style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Overpass:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
+        <title>Rollerskate Spots Australia</title>
+        <div class="logo">
+            <p><a href="../../../index.html">Rollerskate Spots Australia</a></p>
+        </div>
+        <div id="nav-placeholder"></div>
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+        $.get("../../spotNav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+            document.getElementById("QLD").className = "active";
+        });
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178249401-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-178249401-1');
+        </script>
+    </head>
+
+    <body onload="currentSlide(1)">
+        <script src="spotsScript.js"></script>
+        <div class="spotPage">
+            <p id="structureLink"><i><a href="../QLD_select.html"> Queensland</a> / <a href="../QLD_skatespots.html">Skatespots</a> / test</i></p>
+
+            <img id="spotMainImage" src="../../spotHolder.png">
+
+            <div class="spotDetails">
+                <div id="spotDesc">
+                    <h2 id="spotTitle">
+                        <a href="../../../about.html"><img id="verification" src="../../unverified.png" alt="unverified"></a>
+                        test
+                    </h2>
+                    <p id="spotAddress"><b>Address:</b> sakljda</p>
+                    <p id="spotCity"><b>City:</b> safjklajd // safkljads</p>
+                </div>
+                <div id="spotInfo">
+                    <h2 id="title">Information</h2>
+                    <p>
+                        sakfdald
+                    </p>
+                    <p id="spotVerify"><a href="../../../about.html"><b>Verified:</b> no</a></p>
+                </div>
+                <div id="spotFeatures">
+                    <p><b>Slope:</b> medium</p>
+                    <p><b>Surface:</b> asdkla</p>
+                    <p><b>Cracks:</b> sajdla</p>
+                    <p><b>Difficulty:</b> safkla</p>
+                </div>
+
+                <br>
+                <div id="googleMap">
+                    <!-- google maps frame -->>
+                </div>
+                <br>
+
+                <div id="formBoxes">
+                    <_io.TextIOWrapper name='updateForm.html' mode='r' encoding='UTF-8'>
+                    SPOTVERIFY_REPLACE
+                </div>
+                
+                <p id="spotMaps"></p>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div id="footer-placeholder"></div>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+        $.get("../../../../footer.html", function(data){
+        $("#footer-placeholder").replaceWith(data);
+        });
+        </script>
+    </footer>
+</html>

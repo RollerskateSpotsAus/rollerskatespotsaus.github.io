@@ -1,6 +1,6 @@
 # rollerskatespots new spot file creator
 
-# todo: spotTemplate.html doesn't exist apparently in the same directory
+# todo: not replacing words
 
 ##########
 
@@ -11,10 +11,10 @@ def skatespot():
     print("Creating new skatespot...")
     
     # read template file
-    readTemplate = codecs.open("scripts/spotTemplate.html", "r")
+    readTemplate = codecs.open("spotTemplate.html", "r")
     
     # create new file
-    fileName = locationName.replace(" ", "")
+    fileName = locationName.replace(" ", "") # remove spaces in lcoation name
 
     # if file already exists, delete and create a new file
     if os.path.exists(fileName+".html"):
@@ -23,39 +23,37 @@ def skatespot():
     
     # write template text to file
     # newFile.write(str(readTemplate))
-    fillTemplate = str(readTemplate.read())
-
-    # TODO: it isn't replacing the words
+    fillTemplate = str(readTemplate.read()) # this is reading correctly
 
     ## replace text in template
     # replace info
-    fillTemplate.replace("STATE_REPLACE", state)
-    fillTemplate.replace("STATE_FULL_REPLACE", fullState)
-    fillTemplate.replace("LOCATION_REPLACE", locationName)
-    fillTemplate.replace("ADDRESS_REPLACE", address)
-    fillTemplate.replace("CITY_LAND_REPLACE", city+" // "+land)
-    fillTemplate.replace("INFORMATION_REPLACE", bio)
-    fillTemplate.replace("VERIFIED_REPLACE", verified)
-    fillTemplate.replace("VERIFY_YESNO_REPLACE", verificationYN)
+    fillTemplate = fillTemplate.replace("STATE_REPLACE", state)
+    fillTemplate = fillTemplate.replace("STATE_FULL_REPLACE", fullState)
+    fillTemplate = fillTemplate.replace("LOCATION_REPLACE", locationName)
+    fillTemplate = fillTemplate.replace("ADDRESS_REPLACE", address)
+    fillTemplate = fillTemplate.replace("CITY_LAND_REPLACE", city+" // "+land)
+    fillTemplate = fillTemplate.replace("INFORMATION_REPLACE", bio)
+    fillTemplate = fillTemplate.replace("VERIFIED_REPLACE", verified)
+    fillTemplate = fillTemplate.replace("VERIFY_YESNO_REPLACE", verificationYN)
 
     # replace update and verify html buttons
-    updateForm = open("scripts/updateForm.html", "r")
-    fillTemplate.replace("SPOTUPDATE_REPLACE", str(updateForm))
+    updateForm = codecs.open("updateForm.html", "r")    
+    fillTemplate = fillTemplate.replace("SPOTUPDATE_REPLACE", str(updateForm))
     if verificationYN == "No" or verificationYN == "no" or verificationYN == "NO":
-        verifyForm = open("scripts/verifyForm.html", "r")
-        fillTemplate.replace("SPOTUPDATE_REPLACE", str(verifyForm))
+        verifyForm = codecs.open("verifyForm.html", "r")
+        fillTemplate = fillTemplate.replace("SPOTUPDATE_REPLACE", str(verifyForm))
     else:
-        fillTemplate.replace("SPOTUPDATE_REPLACE", " ")
+        fillTemplate = fillTemplate.replace("SPOTUPDATE_REPLACE", " ")
 
     # replace spot specific
     slope = input("What is the slope like? ")
-    fillTemplate.replace("SLOPE_REPLACE", slope)
+    fillTemplate = fillTemplate.replace("SLOPE_REPLACE", slope)
     surface = input("What is the surface like? ")
-    fillTemplate.replace("SURFACE_REPLACE", surface)
+    fillTemplate = fillTemplate.replace("SURFACE_REPLACE", surface)
     cracks = input("What are the cracks like? ")
-    fillTemplate.replace("CRACKS_REPLACE", cracks)
+    fillTemplate = fillTemplate.replace("CRACKS_REPLACE", cracks)
     diff = input("What is the difficulty? ")
-    fillTemplate.replace("DIFFICULTY_REPLACE", diff)
+    fillTemplate = fillTemplate.replace("DIFFICULTY_REPLACE", diff)
 
     # write to file
     newFile.write(str(fillTemplate))
