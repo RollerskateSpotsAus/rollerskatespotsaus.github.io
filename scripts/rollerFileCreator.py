@@ -37,13 +37,15 @@ def skatespot():
     fillTemplate = fillTemplate.replace("VERIFY_YESNO_REPLACE", verificationYN)
 
     # replace update and verify html buttons
+    # replace update button
     updateForm = codecs.open("updateForm.html", "r")    
-    fillTemplate = fillTemplate.replace("SPOTUPDATE_REPLACE", str(updateForm))
+    fillTemplate = fillTemplate.replace("SPOTUPDATE_REPLACE", str(updateForm.read()))
+    # replace verify button
     if verificationYN == "No" or verificationYN == "no" or verificationYN == "NO":
         verifyForm = codecs.open("verifyForm.html", "r")
-        fillTemplate = fillTemplate.replace("SPOTUPDATE_REPLACE", str(verifyForm))
+        fillTemplate = fillTemplate.replace("SPOTVERIFY_REPLACE", str(verifyForm.read()))
     else:
-        fillTemplate = fillTemplate.replace("SPOTUPDATE_REPLACE", " ")
+        fillTemplate = fillTemplate.replace("SPOTVERIFY_REPLACE", " ")
 
     # replace spot specific
     slope = input("What is the slope like? ")
