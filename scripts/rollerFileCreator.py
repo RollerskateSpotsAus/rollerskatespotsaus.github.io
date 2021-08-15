@@ -1,7 +1,5 @@
 # rollerskatespots new spot file creator
 
-# todo: not replacing words
-
 ##########
 
 import codecs # for opening html files
