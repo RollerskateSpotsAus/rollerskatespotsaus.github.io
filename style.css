@@ -205,11 +205,11 @@ footer a{
 }
 
 .dropdown {
-  float: left;
+  /*float: left;*/
   overflow: hidden;
-  /*
+  
   display: inline-block;
-  position: relative;*/
+  /*position: relative;*/
 }
 
 /* Dropdown button */
