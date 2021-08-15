@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../../style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Overpass:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
+        <title>Rollerskate Spots Australia</title>
+        <div class="logo">
+            <p><a href="../../../index.html">Rollerskate Spots Australia</a></p>
+        </div>
+        <div id="nav-placeholder"></div>
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+        $.get("../../spotNav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+            document.getElementById("SA").className = "active";
+        });
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178249401-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-178249401-1');
+        </script>
+    </head>
+
+    <body onload="currentSlide(1)">
+        <script src="spotsScript.js"></script>
+        <div class="spotPage">
+            <p id="structureLink"><i><a href="../SA_select.html"> South Australia</a> / <a href="../SA_skatespots.html">Skatespots</a> / Wilson Park</i></p>
+
+            <img id="spotMainImage" src="../../spotHolder.png">
+
+            <div class="spotDetails">
+                <div id="spotDesc">
+                    <h2 id="spotTitle">
+                        <a href="../../../about.html"><img id="verification" src="../../unverified.png" alt="unverified"></a>
+                        Wilson Park
+                    </h2>
+                    <p id="spotAddress"><b>Address:</b> 121 McBryde Terrace, Whyalla SA 5600</p>
+                    <p id="spotCity"><b>City:</b> Whyalla // Barngarla</p>
+                </div>
+                <div id="spotInfo">
+                    <h2 id="title">Information</h2>
+                    <p>
+                        This is a park with smooth sections in Whyalla.
+                    </p>
+                    <p id="spotVerify"><a href="../../../about.html"><b>Verified:</b> yes</a></p>
+                </div>
+                <div id="spotFeatures">
+                    <p><b>Slope:</b> N/A</p>
+                    <p><b>Surface:</b> N/A</p>
+                    <p><b>Cracks:</b> N/A</p>
+                    <p><b>Difficulty:</b> Beginner-Intermediate</p>
+                </div>
+
+                <br>
+                <div id="googleMap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13380.693850828648!2d137.572625!3d-33.0255602!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf03365545ba9d30!2sWilson%20Park!5e0!3m2!1sen!2sau!4v1629000735460!5m2!1sen!2sau" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <br>
+
+                <div id="formBoxes">
+                    <a id="spotUpdateLink" target="_blank" href="https://forms.gle/nWYR9YvSEjAmKAYBA">
+                        <div id="spotUpdate">
+                            <p>Update this skate spot</p>
+                            <img src="../../../mainImages/formIcon.png">    
+                        </div>
+                    </a>
+                     
+                </div>
+                
+                <p id="spotMaps"></p>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div id="footer-placeholder"></div>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+        $.get("../../../../footer.html", function(data){
+        $("#footer-placeholder").replaceWith(data);
+        });
+        </script>
+    </footer>
+</html>
